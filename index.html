@@ -72,6 +72,35 @@
 		<!-- Three -->
 			<section id="contact" class="main style1 special">
 				<div class="container">
+					<header>
+						<h2>A view into my daily life</h2>
+					</header>
+					<div class="col-6 col-12-medium">
+						<div id="instafeed" class="image-wrapper"></div>
+						<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+						<script type="text/javascript">
+						    var userFeed = new Instafeed({
+							  get: 'user',
+							  userId: '202343779',
+							  accessToken: '202343779.1677ed0.230c2310b40447bb868e6178478db06b',
+							  limit: 9,
+							  resolution: 'standard_resolution',
+							 sortBy: 'most-recent',
+							 template: '<div class="image-item insta-page">' +
+							  '<a class="image insta-image" href="{{link}}">' +
+							  '<img alt="{{user.full_name}}" src="{{image}}"">' +
+							  '</a>' +
+							  '</div>'
+							});
+							userFeed.run();
+						</script>
+					</div>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style3 special contact">
+				<div class="container">
 					<header class="major">
 						<h2>Want to get in touch?</h2>
 					</header>
@@ -79,13 +108,6 @@
 					<div class="row gtr-150">
 						<div class="typeform-widget" data-url="https://ashlinnbrennan.typeform.com/to/TWKq71" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=TWKq71&utm_source=typeform.com-12410229-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
 					</div>
-				</div>
-			</section>
-
-		<!-- Four -->
-			<section id="four" class="main style3 special">
-				<div class="container">
-			
 				</div>
 			</section>
 
