@@ -3156,7 +3156,7 @@ input, select, textarea {
  width: 100%;
 }
   
- .image img {
+ a.image img {
   display: block;
   height: 293px;
   width: 293px;
