@@ -73,7 +73,7 @@
 			<section id="contact" class="main style1 special">
 				<div class="container">
 					<header>
-						<h2>A view into my daily life</h2>
+						<h2>A view into my life</h2>
 					</header>
 					<div class="col-6 col-12-medium">
 						<div id="instafeed" class="image-wrapper"></div>
@@ -88,7 +88,13 @@
 							 sortBy: 'most-recent',
 							 template: '<div class="image-item insta-page">' +
 							  '<a class="image insta-image" href="{{link}}">' +
-							  '<img class="insta-image_img" alt="{{user.full_name}}" src="{{image}}"">' +
+							  '<img alt="{{user.full_name}}" src="{{image}}"">' +
+							  '<div class="img-backdrop">' +
+							  '<div class="insta-caption">' +
+							  '<p>{{caption}}</p>' +
+							  '<p>{{location}}</p>' +
+							  '</div>' +
+							  '</div>' +
 							  '</a>' +
 							  '</div>'
 							});

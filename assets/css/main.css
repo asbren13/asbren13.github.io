@@ -3155,13 +3155,36 @@ input, select, textarea {
  transition:  all .17s cubic-bezier(.4, 0, 1, 1);
  width: 100%;
 }
-  
+
+.img-backdrop {
+	display:none;
+}
+  a.insta-image:hover .img-backdrop {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+    opacity: 0.9;
+    height: 100%;
+    width: 293px;
+    position: absolute;
+    display:block;
+    top: 0;
+    padding: 75px 10px;
+    color: #FFFFFF;
+}
  a.image img {
   display: block;
   height: 293px;
   width: 293px;
   margin-bottom: 28px;
  }
+
+ .insta-caption {
+    max-height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 
  .insta-caption p {
  	font-size: 12px;
