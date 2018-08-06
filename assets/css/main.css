@@ -2804,7 +2804,6 @@ input, select, textarea {
 			background-image: url("images/ccf.png");
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: center;
 		}
 		.main.style3 {
 			background-color: #333;
@@ -3392,11 +3391,15 @@ input, select, textarea {
 				padding: 4em 0 2em 0 ;
 			}
 
+				.main.style2, .main.style3 {
+					background-attachment: scroll;
+				}
 
 		/* Header */
 
 			#header {
 				padding: 5em 0 5em 0 ;
+				background-attachment: scroll;
 			}
 
 				#header br {
