@@ -2812,6 +2812,7 @@ input, select, textarea {
 			background-image: url("images/IMG_7665.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
+			background-position: center;
 		}
 		.main.style3 .container {
 			height: 100vh;
@@ -3488,6 +3489,12 @@ input, select, textarea {
 		/* Custom */
 		span.resume img {
 		    width: 75%;
+		    margin-top: 15px;
+		}
+
+		a.image img {
+		    display: block;
+		    margin: 0 auto;
 		    margin-top: 15px;
 		}
 
