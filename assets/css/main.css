@@ -3391,9 +3391,6 @@ input, select, textarea {
 				padding: 4em 0 2em 0 ;
 			}
 
-				.main.style2 {
-					background-attachment: scroll;
-				}
 
 		/* Header */
 
@@ -3499,6 +3496,10 @@ input, select, textarea {
 		}
 		.main.style3 {
 			background-image: url("images/IMG_7669.jpg");
+		}
+
+		.contact p {
+		    margin-bottom: 0.5em;
 		}
 
 		/* Basic */
