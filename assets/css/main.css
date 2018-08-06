@@ -3497,6 +3497,9 @@ input, select, textarea {
 		    margin: 0 auto;
 		    margin-top: 15px;
 		}
+		.main.style3 {
+			background-image: url("images/IMG_7669.jpg");
+		}
 
 		/* Basic */
 
