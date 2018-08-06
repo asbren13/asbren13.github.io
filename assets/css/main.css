@@ -3122,6 +3122,25 @@ input, select, textarea {
 		width: 300px;
 		margin-top: 5.5em;
 	} 
+	
+	.contact .row {
+		display: block;
+	}
+
+	img.profile-img {
+		border-radius: 50%;
+	}
+	.typeform-widget {
+		width: 50%;
+		height: 500px;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	.typeform-widget ul.questions {
+		margin-top: 50px !important;
+	}
+
   
 .image-wrapper {
   box-sizing: border-box;
@@ -3398,7 +3417,26 @@ input, select, textarea {
 /* Medium */
 
 	@media screen and (max-width: 980px) {
+		/* Custom*/ 
 
+		img.profile-img {
+			max-height: 50%;
+			max-width: 50%;
+			display: block;
+			margin: 0 auto;
+		}
+		.resume .button {
+		    margin-top: 1em;
+		}
+		span.resume img {
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+
+		.typeform-widget {
+		    width: 100%;
+		}
 		/* List */
 
 			ul.major-icons li {
@@ -3446,6 +3484,12 @@ input, select, textarea {
 /* Small */
 
 	@media screen and (max-width: 736px) {
+
+		/* Custom */
+		span.resume img {
+		    width: 75%;
+		    margin-top: 15px;
+		}
 
 		/* Basic */
 
