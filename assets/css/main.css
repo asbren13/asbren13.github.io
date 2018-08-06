@@ -3393,6 +3393,7 @@ input, select, textarea {
 
 				.main.style2, .main.style3 {
 					background-attachment: scroll;
+					height: 100vh;
 				}
 
 		/* Header */
