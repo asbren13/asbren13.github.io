@@ -2804,6 +2804,7 @@ input, select, textarea {
 			background-image: url("images/ccf.png");
 			background-size: cover;
 			background-repeat: no-repeat;
+			background-position: center;
 		}
 		.main.style3 {
 			background-color: #333;
