@@ -24,6 +24,9 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+			$('p.insta-location').filter(function(){
+			    return $.trim($(this).text()) === ''
+			}).parent().hide()
 		});
 
 	// Scrolly.
