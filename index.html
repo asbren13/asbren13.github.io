@@ -21,7 +21,12 @@
 
 		  gtag('config', 'UA-62603348-1');
 		</script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -92,19 +97,16 @@
 							  limit: 9,
 							  resolution: 'standard_resolution',
 							 sortBy: 'most-recent',
-							 template: '<div class="image-item insta-page">' +
-							  '<a class="image insta-image" href="{{link}}">' +
-							  '<img alt="{{user.full_name}}" src="{{image}}"">' +
-							  '<div class="img-backdrop">' +
-							  '<div class="insta-caption">' +
-							  '<p>{{caption}}</p>' +
-							  '<p>{{location}}</p>' +
-							  '</div>' +
-							  '</div>' +
-							  '</a>' +
-							  '</div>'
+							 template: '<div class="image-item insta-page"><a class="image insta-image" href="{{link}}"><img alt="{{user.full_name}}" src="{{image}}""><div class="img-backdrop"><div class="insta-caption"><p>{{caption}}</p><span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><p class="insta-location"> {{location}}</p></span></div></div></a></div>'
 							});
 							userFeed.run();
+						</script>
+						<script type="text/javascript">
+							$(window).bind('load', function(){
+								$('p.insta-location').filter(function(){
+								    return $.trim($(this).text()) === ''
+								}).parent().hide()
+							});
 						</script>
 					</div>
 				</div>
@@ -138,12 +140,7 @@
 			</section>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			
 
 	</body>
 </html>

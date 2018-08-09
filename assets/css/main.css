@@ -3205,9 +3205,16 @@ input, select, textarea {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
+i.fa.fa-map-marker {
+	font-size: 14px;
+    padding: 5px;
+}
+span.location {
+	display: inline-block;
+}
  .insta-caption p {
  	font-size: 12px;
+    display: inline-block;
  }
 
 
