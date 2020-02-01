@@ -80,20 +80,15 @@
 					<header>
 						<h2>Take a peek into my life</h2>
 					</header>
-					<div class="col-6 col-12-medium">
-						<div id="instafeed" class="image-wrapper"></div>
-						<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+					<div class="col-6 col-12-medium instagram-feed">	
+						<div id="curator-feed-default-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
 						<script type="text/javascript">
-						    var userFeed = new Instafeed({
-							  get: 'user',
-							  userId: '202343779',
-							  accessToken: '202343779.1677ed0.230c2310b40447bb868e6178478db06b',
-							  limit: 9,
-							  resolution: 'standard_resolution',
-							 sortBy: 'most-recent',
-							 template: '<div class="image-item insta-page"><a class="image insta-image" href="{{link}}"><img alt="{{user.full_name}}" src="{{image}}""><div class="img-backdrop"><div class="insta-caption"><p>{{caption}}</p><span class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><p class="insta-location"> {{location}}</p></span></div></div></a></div>'
-							});
-							userFeed.run();
+						/* curator-feed-default-layout */
+						(function(){
+						var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+						i.src = "https://cdn.curator.io/published/fb64676e-9366-4b74-8b77-006ebb989145.js";
+						e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+						})();
 						</script>
 					</div>
 				</div>

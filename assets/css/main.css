@@ -3169,6 +3169,24 @@ input, select, textarea {
   padding: 12px;
 }
 
+section#instagram .container .instagram-feed .crt-post-text {
+	font-size: 14px;
+    line-height: 1.5;
+    padding-top: 25px;
+}
+
+section#instagram .container .instagram-feed .crt-social-icon,
+section#instagram .container .instagram-feed .crt-post-footer,
+section#instagram .container .instagram-feed .crt-post-header {
+	display: none;
+}
+
+section#instagram .container .instagram-feed .crt-widget.crt-widget-branded .crt-logo {
+    font-size: 10px;
+    bottom: 0px;
+    border-bottom: none;
+}
+
 .image {
  display: block;
  position: relative;
